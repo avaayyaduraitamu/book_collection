@@ -1,0 +1,26 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - 2026-08-28 17:03:44.410807000 Z
+    - 2026-08-28 17:03:44.410811000 Z
+
+---
+books:
+  columns:
+  - id
+  - title
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Harry Potter
+    - 2026-08-28 17:28:36.875054000 Z
+    - 2026-08-28 17:28:36.875054000 Z

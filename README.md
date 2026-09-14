@@ -1,6 +1,5 @@
 # Book Collection App
 
-
 A Ruby on Rails 7 application for managing a personal book collection with CRUD operations.
 
 ## Prerequisites

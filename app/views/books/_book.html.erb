@@ -4,4 +4,21 @@
     <%= book.title %>
   </p>
 
+  <p>
+    <strong>Author:</strong>
+    <%= book.author %>
+  </p>
+
+  <p>
+    <strong>Price:</strong>
+    $<%= number_with_precision(book.price, precision: 2) %>
+  </p>
+
+  <p>
+    <strong>Published Date:</strong>
+    <% if book.published_date %>
+      <%= book.published_date.strftime("%B %d, %Y") %>
+    <% end %>
+  </p>
+
 </div>

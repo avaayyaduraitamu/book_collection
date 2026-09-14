@@ -1,5 +1,5 @@
 # Book Collection App
-<<<<<<< HEAD
+
 
 A Ruby on Rails 7 application for managing a personal book collection with CRUD operations.
 
@@ -106,6 +106,3 @@ Then access via `http://localhost:3001/books`
    - Click "Show" to view details
    - Click "Edit" to modify the book
    - Click "Delete" to remove it (confirm the dialog)
-=======
-This is a change in the dev branch
->>>>>>> 14df05986c284b47cc9e63b5fb39aa346c172ad1

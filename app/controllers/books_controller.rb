@@ -28,8 +28,8 @@ class BooksController < ApplicationController
         format.html { redirect_to @book, notice: "Book was successfully created." }
         format.json { render :show, status: :created, location: @book }
       else
-        format.html { render :new, status: :unprocessable_content }
-        format.json { render json: @book.errors, status: :unprocessable_content }
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @book.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -41,8 +41,8 @@ class BooksController < ApplicationController
         format.html { redirect_to @book, notice: "Book was successfully updated.", status: :see_other }
         format.json { render :show, status: :ok, location: @book }
       else
-        format.html { render :edit, status: :unprocessable_content }
-        format.json { render json: @book.errors, status: :unprocessable_content }
+        format.html { render :edit, status: :unprocessable_entity }
+        format.json { render json: @book.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -52,7 +52,7 @@ class BooksController < ApplicationController
     @book.destroy!
 
     respond_to do |format|
-      format.html { redirect_to books_path, notice: "Book was successfully destroyed.", status: :see_other }
+      format.html { redirect_to books_path, notice: "Book was successfully deleted.", status: :see_other }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def book_params
-      params.expect(book: [ :title ])
+      params.expect(book: [ :title, :author, :price, :published_date ])
     end
 end
